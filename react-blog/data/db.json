@@ -1,0 +1,52 @@
+{
+  "blogs": [
+    {
+      "id": "1",
+      "title": "First blog",
+      "author": "ram",
+      "body": "First blog content"
+    },
+    {
+      "id": "2",
+      "title": "Second blog",
+      "author": "shyam",
+      "body": "Second blog content"
+    },
+    {
+      "id": "0de8",
+      "title": "testTitle",
+      "body": "lorem40",
+      "author": "shyam"
+    },
+    {
+      "id": "5752",
+      "title": "testTitle",
+      "body": "aaaaaaaaaaa",
+      "author": "shyam"
+    },
+    {
+      "id": "716b",
+      "title": "abc",
+      "body": "asdasd",
+      "author": "ram"
+    },
+    {
+      "id": "a7c1",
+      "title": "xyz",
+      "body": "asdasdd",
+      "author": "ram"
+    },
+    {
+      "id": "37e7",
+      "title": "blackpink",
+      "body": "plaasdasdada",
+      "author": "shyam"
+    },
+    {
+      "id": "eec6",
+      "title": "twice",
+      "body": "sssssssssssss",
+      "author": "ram"
+    }
+  ]
+}

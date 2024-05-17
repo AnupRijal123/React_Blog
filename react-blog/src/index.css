@@ -1,70 +1,123 @@
-.main-container{
-    background-color:pink;
-    width:100vw;
-    display:flex;
-    flex-direction:column;
-    
-}
-.navbar-div{
-    background-color:yellow;
-    display:flex;
-    justify-content:space-between;
-    padding:10px 20px;
-}
-.navbar-div h2{
-    margin:0px;
-}
-.link-div{
-    background-color:purple;
-    display:flex;
-    gap:20px;
-    align-items:center;
-}
-.link-div a{
-    background-color:pink;
-    text-decoration:none;
-}
-.home-div{
-    background-color:pink;
-    padding:0px 50px;
+.main-container {
+    background-color: pink;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+
 }
 
-body{
-    background-color:blue;
-    margin:0px;
-    width:100vw;
-}
-.content-div{
-    background-color:red;
-    padding:20px;
-}
-p{
-    margin:0px;
-    font-size:16px;
-}
-h2{
-    margin:0px;
+.navbar-div {
+    background-color: yellow;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
 }
 
-.blog-div{
-    background-color:white;
+.navbar-div h2 {
+    margin: 0px;
 }
-.blog-div h2{
-    color:red;
+
+.link-div {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.link-div a {
+    text-decoration: none;
+}
+
+.home-div {
+    background-color: pink;
+    padding: 0px 50px;
+}
+
+body {
+    background-color: blue;
+    margin: 0px;
+    width: 100vw;
+}
+
+.content-div {
+    background-color: red;
+    padding: 20px;
+}
+
+p {
+    margin: 0px;
+    font-size: 16px;
+}
+
+h2 {
+    margin: 0px;
+}
+
+.blog-div {
+    background-color: white;
+}
+
+.blog-div h2 {
+    color: red;
+}
+
+.blog-content {
+    background-color: white;
+}
+
+.blog-content:hover {
+    box-shadow: 1px 5px 10px 1px black;
 }
 
 
-.blog-content{
-    background-color:white;
-    position:relative;
+.blog-container {
+    background-color: purple;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
-.blog-content:hover{
-    box-shadow:1px 5px 10px 1px black;
-}   
 
-.blog-container{
-    background-color:purple;
-    display:flex;
-    flex-direction:column;
-    gap:10px;
+.blog-container a {
+    text-decoration: none;
+}
+
+.add-blog-container form {
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+}
+
+.add-blog-container .row {
+    background-color: yellow;
+    display: flex;
+}
+
+.row label {
+    background-color: green;
+    min-width: 100px;
+}
+
+button {
+    margin: auto;
+    background-color: #f1356d;
+    border: none;
+    color: #ffffff;
+    padding: 10px 5px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.add-blog-container {
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.not-found-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

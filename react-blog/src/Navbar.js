@@ -1,10 +1,12 @@
-function Navbar(){
-    return(
+import { Link } from 'react-router-dom';
+function Navbar() {
+    return (
         <div className="navbar-div">
             <h2>navbar component</h2>
             <div className="link-div">
-            <a href='#' style={{color:'white',fontWeight:'bold'}}>Home</a>
-            <a href='#'>New Blog </a>
+                <Link to="/">Home</Link>
+                <Link to="/create">New Blog</Link>
+
             </div>
         </div>
     )
