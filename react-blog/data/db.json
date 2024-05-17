@@ -3,14 +3,16 @@
     {
       "id": "1",
       "title": "First blog",
-      "author": "ram",
-      "body": "First blog content"
+      "genre": "crime",
+      "body": "First blog content",
+      "author": "ram thapa"
     },
     {
       "id": "2",
       "title": "Second blog",
-      "author": "shyam",
-      "body": "Second blog content"
+      "genre": "education",
+      "body": "Second blog content",
+      "author": "shyam sharma"
     },
     {
       "id": "0de8",
@@ -47,6 +49,13 @@
       "title": "twice",
       "body": "sssssssssssss",
       "author": "ram"
+    },
+    {
+      "id": "6563",
+      "title": "final test",
+      "body": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaadddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+      "genre": "politics",
+      "author": "Peter"
     }
   ]
 }

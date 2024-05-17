@@ -8,7 +8,8 @@ function NewBlog() {
 
     const [blogtitle, setBlogTitle] = useState('');
     const [blogbody, setBlogBody] = useState('');
-    const [blogauthor, setBlogAuthor] = useState('ram');
+    const [blogGenre, setBlogGenre] = useState('');
+    const [blogAuthor, setBlogAuthor] = useState('hello');
     const history = useHistory();
 
     const handleClick = async function (e) {
@@ -17,7 +18,8 @@ function NewBlog() {
         await axios.post('http://localhost:8000/blogs', {
             title: blogtitle,
             body: blogbody,
-            author: blogauthor
+            genre: blogGenre,
+            author: blogAuthor
         }).then((response) => {
             console.log(response)
             history.push('/');
@@ -29,10 +31,9 @@ function NewBlog() {
 
     return (
         <div className="add-blog-container">
-            <h2>New Blog Component</h2>
             <form>
                 <div className="row">
-                    <label>Blog title</label>
+                    <label>Blog title:</label>
                     <input
                         type="text"
                         required
@@ -43,7 +44,7 @@ function NewBlog() {
                     />
                 </div>
                 <div className="row">
-                    <label>Blog body</label>
+                    <label>Blog body:</label>
                     <textarea
                         required
                         value={blogbody}
@@ -54,21 +55,30 @@ function NewBlog() {
                     ></textarea>
                 </div>
                 <div className="row">
-                    <label>Blog author</label>
+                    <label>Author:</label>
+                    <input
+                        type="text"
+                        value={blogAuthor}
+                        onChange={function (e) {
+                            setBlogAuthor(e.target.value);
+                        }}
+
+                    />
+                </div>
+                <div className="row">
+                    <label>Genre:</label>
                     <select
-                        value={blogauthor}
+                        value={blogGenre}
                         onChange={function (e) {
                             // console.log(e.target.value)
-                            setBlogAuthor(e.target.value)
+                            setBlogGenre(e.target.value)
                         }}>
-                        <option value="ram">Ram</option>
-                        <option value="shyam">Shyam</option>
+                        <option value="education">education</option>
+                        <option value="politics">politics</option>
+                        <option value="crime">crime</option>
                     </select>
                 </div>
                 <button onClick={handleClick}>Add Blog</button>
-                <p>{blogtitle}</p>
-                <p>{blogbody}</p>
-                <p>{blogauthor}</p>
             </form>
         </div>
     )

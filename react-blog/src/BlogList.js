@@ -10,14 +10,14 @@ function BlogList(props) {
 
     return (
         <div className="blog-container">
-            <p>bloglist compoent</p>
             <h2 style={{ margin: 'auto' }}>{title}</h2>
             {blogs.map((blog) => (
                 <div className="blog-div" key={blog.id}>
                     <Link to={`blogs/${blog.id}`}>
                         <div className="blog-content">
                             <h2>{blog.title}</h2>
-                            <small>Written By: {blog.author}</small>
+                            <small>Written By:{blog.author}</small>
+                            <small>Genre: {blog.genre}</small>
                         </div>
                     </Link>
                 </div>

@@ -22,19 +22,19 @@ function BlogDetails() {
 
     return (
         <div>
-            <h2>Blog details component</h2>
             {showLoading && <p>Loading...</p>}
             {error != null && <p>{error}</p>}
             {blogs &&
-                <div>
+                <div className="blog-detail-container">
                     <h2>{blogs.title}</h2>
-                    {showLoading === false && <small>Written by:{blogs.author}</small>}
+                    {showLoading === false && <small>Genre:{blogs.genre}</small>}
+                    {showLoading === false && <small>Written By:{blogs.author}</small>}
                     <article>
                         {blogs.body}
                     </article>
-                    <button onClick={function () {
+                    {showLoading === false && <button onClick={function () {
                         handleDelete(blogs.id)
-                    }}>Delete</button>
+                    }}>Delete</button>}
                 </div>
             }
 

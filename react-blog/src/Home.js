@@ -46,8 +46,6 @@ function Home() {
 
   return (
     <div className="home-div">
-      <p>Home component</p>
-
       {showLoading && <div>Loading...</div>}
 
       <div>{error}</div>
