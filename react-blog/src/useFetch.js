@@ -27,7 +27,7 @@ function useFetch(url) {
                 setError(error.message);
                 setShowLoading(false)
             })
-        }, 2000);
+        }, 1000);
         // fetch('http://localhost:8000/blogs').then(response => {
         //   return response.json()
         // }).then((data) => {

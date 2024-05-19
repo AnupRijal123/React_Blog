@@ -30,8 +30,9 @@ function BlogDetails() {
                     {showLoading === false && <small>Genre:{blogs.genre}</small>}
                     {showLoading === false && <small>Written By:{blogs.author}</small>}
                     <article>
-                        {blogs.body}
+                        <p>{blogs.body}</p>
                     </article>
+
                     {showLoading === false && <button onClick={function () {
                         handleDelete(blogs.id)
                     }}>Delete</button>}

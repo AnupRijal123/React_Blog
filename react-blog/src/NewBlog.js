@@ -9,7 +9,7 @@ function NewBlog() {
     const [blogtitle, setBlogTitle] = useState('');
     const [blogbody, setBlogBody] = useState('');
     const [blogGenre, setBlogGenre] = useState('');
-    const [blogAuthor, setBlogAuthor] = useState('hello');
+    const [blogAuthor, setBlogAuthor] = useState('');
     const history = useHistory();
 
     const handleClick = async function (e) {

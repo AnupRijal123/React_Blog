@@ -10,7 +10,7 @@ function BlogList(props) {
 
     return (
         <div className="blog-container">
-            <h2 style={{ margin: 'auto' }}>{title}</h2>
+            <h2 style={{ margin: 'auto', color: '#000000' }}>{title}</h2>
             {blogs.map((blog) => (
                 <div className="blog-div" key={blog.id}>
                     <Link to={`blogs/${blog.id}`}>
